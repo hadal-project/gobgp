@@ -324,7 +324,7 @@ func (t *Table) GetMUPDestinationsWithRouteType(p string) ([]*Destination, error
 }
 
 func (t *Table) setDestination(dst *Destination) {
-	t.destinations[t.tableKey(dst.nlri)] = dst
+	// t.destinations[t.tableKey(dst.nlri)] = dst
 }
 
 func (t *Table) tableKey(nlri bgp.AddrPrefixInterface) string {
